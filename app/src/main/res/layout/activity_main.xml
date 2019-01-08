@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edTxtBrandName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Enter prospective brand name"
+        android:inputType="text|textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btnCheckIt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnCheckIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="checkIt"
+        android:text="Check it"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtDotCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=".com"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtBrandName"/>
+
+    <TextView
+        android:id="@+id/txtDotCo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=".co"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtDotCom"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtBrandName"/>
+
+    <TextView
+        android:id="@+id/txtDotNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=".net"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtDotCo"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtBrandName"/>
+
+    <TextView
+        android:id="@+id/txtDotOrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=".org"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtDotNet"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtBrandName"/>
+
+    <TextView
+        android:id="@+id/txtDotAI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=".ai"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtDotOrg"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtBrandName"/>
+
+    <TextView
+        android:id="@+id/txtFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Facebook"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDotCom"/>
+
+    <TextView
+        android:id="@+id/txtInstagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Instagram"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtFacebook"
+        app:layout_constraintTop_toBottomOf="@+id/txtDotNet"/>
+
+    <TextView
+        android:id="@+id/txtTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Twitter"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/txtDotAI"/>
+
+    <TextView
+        android:id="@+id/txtYouTube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="YouTube"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFacebook"/>
+
+</android.support.constraint.ConstraintLayout>
